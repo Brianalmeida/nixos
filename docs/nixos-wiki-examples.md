@@ -17,3 +17,4 @@
 - https://github.com/Alan01252/nixos-config/blob/master/configuration.nix
 - https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/vim.section.md
 - https://discourse.nixos.org/t/how-do-i-add-a-vim-scripts-plugin-to-vim/14020
+- https://github.com/jlesquembre/dotfiles/blob/df45c826ff9f18b7c5a4eab750daea8baf359f5e/home-manager/neovim-deps.nix
