@@ -1,0 +1,150 @@
+env:
+  # TERM: variable
+
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: 'xterm-256color'
+
+window:
+#   Window dimensions (changes require restart)
+
+#   Number of lines/columns (not pixels) in the terminal. The number of columns
+#   must be at least `2`, while using a value of `0` for columns and lines will
+#   fall back to the window manager's recommended size.
+   dimensions:
+      columns: 70
+      lines: 40
+
+
+
+font:
+  normal:
+    family: "JetBrains Mono"
+    style: Medium
+
+  # Bold font face
+  bold:
+    family: "JetBrains Mono"
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: "JetBrains Mono"
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: "JetBrains Mono"
+    style: Bold Italic
+
+  # Point size
+  size: 15
+
+colors:
+#    # Default colors
+#    primary:
+#        background: "#24273A" # base
+#        foreground: "#CAD3F5" # text
+#        # Bright and dim foreground colors
+#        dim_foreground: "#CAD3F5" # text
+#        bright_foreground: "#CAD3F5" # text
+#
+#    # Cursor colors
+#    cursor:
+#        text: "#24273A" # base
+#        cursor: "#F4DBD6" # rosewater
+#    vi_mode_cursor:
+#        text: "#24273A" # base
+#        cursor: "#B7BDF8" # lavender
+#
+#    # Search colors
+#    search:
+#        matches:
+#            foreground: "#24273A" # base
+#            background: "#A5ADCB" # subtext0
+#        focused_match:
+#            foreground: "#24273A" # base
+#            background: "#A6DA95" # green
+#        footer_bar:
+#            foreground: "#24273A" # base
+#            background: "#A5ADCB" # subtext0
+#
+#    # Keyboard regex hints
+#    hints:
+#        start:
+#            foreground: "#24273A" # base
+#            background: "#EED49F" # yellow
+#        end:
+#            foreground: "#24273A" # base
+#            background: "#A5ADCB" # subtext0
+#
+#    # Selection colors
+#    selection:
+#        text: "#24273A" # base
+#        background: "#F4DBD6" # rosewater
+#
+#    # Normal colors
+#    normal:
+#        black: "#494D64" # surface1
+#        red: "#ED8796" # red
+#        green: "#A6DA95" # green
+#        yellow: "#EED49F" # yellow
+#        blue: "#8AADF4" # blue
+#        magenta: "#F5BDE6" # pink
+#        cyan: "#8BD5CA" # teal
+#        white: "#B8C0E0" # subtext1
+#
+#    # Bright colors
+#    bright:
+#        black: "#5B6078" # surface2
+#        red: "#ED8796" # red
+#        green: "#A6DA95" # green
+#        yellow: "#EED49F" # yellow
+#        blue: "#8AADF4" # blue
+#        magenta: "#F5BDE6" # pink
+#        cyan: "#8BD5CA" # teal
+#        white: "#A5ADCB" # subtext0
+#
+#    # Dim colors
+#    dim:
+#        black: "#494D64" # surface1
+#        red: "#ED8796" # red
+#        green: "#A6DA95" # green
+#        yellow: "#EED49F" # yellow
+#        blue: "#8AADF4" # blue
+#        magenta: "#F5BDE6" # pink
+#        cyan: "#8BD5CA" # teal
+#        white: "#B8C0E0" # subtext1
+#
+#    indexed_colors:
+#        - { index: 16, color: "#F5A97F" }
+#        - { index: 17, color: "#F4DBD6" }
+  primary:
+    background: '0x1e1c31'
+    foreground: '#CAD3F5'
+  cursor:
+    text: '0x1e1c31'
+    cursor: '#F4DBD6'
+  normal:
+    black: '0x1e1c31'
+    red: '0xf48fb1'
+    green: '0xa1efd3'
+    yellow: '0xffe6b3'
+    blue: '0x91ddff'
+    magenta: '0xd4bfff'
+    cyan: '0xabf8f7'
+    white: '0xcbe3e7'
+  bright:
+    black: '0x585273'
+    red: '0xf02e6e'
+    green: '0x7fe9c3'
+    yellow: '0xf2b482'
+    blue: '0x78a8ff'
+    magenta: '0x7676ff'
+    cyan: '0x63f2f1'
+    white: '0x8a889d'
+
+
+live_config_reload: true
