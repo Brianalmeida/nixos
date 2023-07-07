@@ -5,7 +5,9 @@ mkShell {
     nixpkgs-fmt
     pkgs.vim
     pkgs.neovim
-    # Enter other packages here
+    pkgs.rustup
+    pkgs.cargo
+    # Enter packages here
   ];
 
   shellHook = ''
