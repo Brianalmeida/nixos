@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, user, ... }:
 
 {
   imports =
@@ -42,6 +42,8 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # Configure keymap in X11
   # services.xserver.layout = "us";
   # services.xserver.xkbOptions = {
@@ -75,6 +77,8 @@
   environment.sessionVariables.TERMINAL = [ "alacritty" ];
   environment.sessionVariables.EDITOR = [ "vim" ];
 
+  # Wiregaurd Settings
+
   #Updates
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
@@ -83,7 +87,7 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.${user} = {
+  users.users.tio = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
@@ -120,6 +124,9 @@
      meson
      rustup
      cargo
+     wireguard-tools
+     font-awesome
+     gammastep
    ];
 
   fonts.fontDir.enable = true;
