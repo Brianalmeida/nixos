@@ -13,11 +13,15 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'rafamadriz/friendly-snippets'
 
-" On-demand loading
+" ===================================================
+" NerdTree Settings
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 
 " Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
+let NERDTreeShowHidden=1
+
+" ===================================================
 
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
