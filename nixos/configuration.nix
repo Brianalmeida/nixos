@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/networking
       <home-manager/nixos>
     ];
 
@@ -95,6 +96,7 @@
       firefox
       thunderbird
       hyprland
+      #river
       vim
       alacritty
       zsh
@@ -110,6 +112,7 @@
      wget
      alacritty
      hyprland
+     #river
      neofetch
      pipewire
      cmake
@@ -122,8 +125,10 @@
      wlroots
      pkg-config
      meson
+     python3
      rustup
      cargo
+     ghc
      wireguard-tools
      font-awesome
      gammastep
