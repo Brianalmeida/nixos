@@ -17,6 +17,8 @@ mkShell {
   ];
 
   shellHook = ''
-    echo "Hello there"
+    echo "==============================="
+    echo "Hello there, you are now using a Nix shell"
+    echo "==============================="
   '';
 }
