@@ -112,7 +112,7 @@
      wget
      alacritty
      hyprland
-     #river
+     sway
      neofetch
      pipewire
      cmake
@@ -126,8 +126,8 @@
      pkg-config
      meson
      python3
-     rustup
-     cargo
+     #rustup
+     #cargo
      ghc
      wireguard-tools
      font-awesome
